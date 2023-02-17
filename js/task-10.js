@@ -15,6 +15,7 @@ const inputNumber = document.querySelector('#controls input');
 const dataCreateBtn = document.querySelector('button[data-create]');
 const dataDestroyBtn = document.querySelector('button[data-destroy]');
 const boxesStoreDiv = document.querySelector('#boxes');
+inputNumber.value = 0;
 
 const createBoxes = amount => {
   const boxesArray = [];
@@ -41,6 +42,7 @@ dataCreateBtn.addEventListener('click', () => {
 
 const destroyBoxes = () => {
   boxesStoreDiv.innerHTML = '';
+  inputNumber.value = 0;
 };
 
 dataDestroyBtn.addEventListener('click', () => {
